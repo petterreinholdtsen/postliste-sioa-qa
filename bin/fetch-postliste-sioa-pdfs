@@ -1,0 +1,44 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import lxml.html
+import os
+import subprocess
+import urllib2
+
+agency = 'Studentsamskipnaden i Oslo og Akershus'
+
+baseurl = 'https://sio.no'
+frontpage = 'https://sio.no/snarveier/om-sio/rapporter-og-referater'
+
+def fetch_url_harder(url):
+    response = urllib2.urlopen(url)
+    content = response.read()
+    return content
+
+urltitle = {}
+def find_journal_pdfs(baseurl, frontpage):
+    html = fetch_url_harder(frontpage)
+    root = lxml.html.fromstring(html)
+    urls = root.cssselect("a.readmore")
+    urllist = []
+    for ahref in urls:
+        linktext = ahref.text_content()
+#	print linktext
+        if -1 != linktext.find('uke') and -1 == linktext.find('ingen dokumenter'):
+            href = ahref.attrib['href']
+            urltitle[href] = ahref.text
+            urllist.append(href)
+    return urllist
+
+pdfurls = find_journal_pdfs(baseurl, frontpage)
+for pdfurl in pdfurls:
+    years = [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+#    print(pdfurl, urltitle[pdfurl])
+    filename = urltitle[pdfurl]
+    for year in years:
+        if -1 != filename.find(str(year)):
+            filename = os.path.join(str(year), filename)
+    if not os.path.exists(filename):
+        subprocess.call(['wget', '-O', filename, pdfurl])
+
