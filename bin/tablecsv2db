@@ -79,6 +79,7 @@ def main():
                 else:
                     data.append(dataline)
 
+    print "\t".join(order)
     for entry in sorted(data, key=lambda x: x['Doc #']):
         row = []
         log(str(entry))
