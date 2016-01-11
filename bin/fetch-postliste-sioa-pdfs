@@ -31,14 +31,17 @@ def find_journal_pdfs(baseurl, frontpage):
             urllist.append(href)
     return urllist
 
-pdfurls = find_journal_pdfs(baseurl, frontpage)
-for pdfurl in pdfurls:
+def main():
+    pdfurls = find_journal_pdfs(baseurl, frontpage)
     years = [2010, 2011, 2012, 2013, 2014, 2015, 2016]
-#    print(pdfurl, urltitle[pdfurl])
-    filename = urltitle[pdfurl]
-    for year in years:
-        if -1 != filename.find(str(year)):
-            filename = os.path.join(str(year), filename)
-    if not os.path.exists(filename):
-        subprocess.call(['wget', '-O', filename, pdfurl])
+    for pdfurl in pdfurls:
+#        print(pdfurl, urltitle[pdfurl])
+        filename = urltitle[pdfurl]
+        for year in years:
+            if -1 != filename.find(str(year)):
+                filename = os.path.join(str(year), filename)
+        if not os.path.exists(filename):
+            subprocess.call(['wget', '-O', filename, pdfurl])
 
+if __name__ == '__main__':
+    main()
