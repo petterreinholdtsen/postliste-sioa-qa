@@ -12,3 +12,8 @@ csv: pdftable-code pdfs
 	  pdftohtml -xml -stdout "$$f" | \
 	    python pdftable-code/pdftable.py > "$$f".csv ; \
 	done
+
+tsv:
+	for y in 2016 ; do \
+	  bin/tablecsv2db postjournal-sioa/$$y/*.csv > postjournal-sioa-$$y.tsv ; \
+	done
