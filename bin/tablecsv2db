@@ -18,6 +18,7 @@ debug = False
 
 order = ['Doc #',
          'Endret dato',
+         'Sist endret d',
          'Tittel',
          'Saksbehandler',
          'Applikasjon',
@@ -25,13 +26,13 @@ order = ['Doc #',
 
 def log(msg):
     if debug:
-        print msg
+        print(msg)
 
 def main():
     data = []
     for filename in sys.argv[1:]:
         log("Reading " + filename)
-    	with open(filename, 'r') as csvfile:
+        with open(filename, 'r') as csvfile:
             csvdata = csv.reader(csvfile, delimiter=',', quotechar='"')
             nextline = csvdata.next()
             if '' == nextline[0]:
@@ -40,20 +41,20 @@ def main():
             else:
                 title = os.path.basename(filename).replace('.csv', '')
                 header = nextline
-#            print title
-#            print header
+            log(title)
+            log(header)
             for row in csvdata:
-#                print row
+                log(row)
                 if '' == row[0] and '' == row[2]:
                     # Continuation data row
                     dataline['Tittel'] += row[1]
                     fieldseen['Tittel'] = 1
-#                    print "title continuation"
+                    log("title continuation")
                     continue
                 elif '' == row[2]:
                     # Contuation header row
                     header[0] += row[0]
-#                    print "header continuation"
+                    log("header continuation")
                     continue
                 else:
                     dataline = { 'List Title' : title }
@@ -73,19 +74,20 @@ def main():
                                 header[i] = 'Saksbehandler'
                             fieldseen[header[i]] = 1
                             dataline[header[i]] = row[i]
-#                print dataline
+#                print(dataline)
                 if 'Doc #' not in dataline:
                     sys.stderr.write("error:" + str(dataline) + "\n")
                 else:
                     data.append(dataline)
 
-    print "\t".join(order)
+    print("\t".join(order))
     for entry in sorted(data, key=lambda x: x['Doc #']):
         row = []
         log(str(entry))
         for field in order:
-            row.append(entry[field])
-        print "\t".join(row)
+            if field in entry:
+                row.append(entry[field])
+        print("\t".join(row))
     return data
 
 if __name__ == '__main__':
