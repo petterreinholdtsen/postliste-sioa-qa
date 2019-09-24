@@ -31,3 +31,8 @@ databaseformat for enkel sammenligning.  Det gjøres antagelig greiest
 med [pdftable](http://sourceforge.net/projects/pdftable).
 
  [3]: https://www.sio.no/snarveier/om-sio/rapporter-og-referater "Rapporter og referater"
+ 
+En kan hente ut post til og fra samskipnaden i offentlige etaters
+postlister ved å besøke tjenesten Norske postlister[4].
+
+[4] https://norske-postlister.no/?query=%28document_from_org.orgnummer%3A948554062%29+OR+%28document_to_org.orgnummer%3A948554062%29
