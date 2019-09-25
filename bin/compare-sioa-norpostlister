@@ -1,0 +1,115 @@
+#!/usr/bin/python3
+
+import csv
+import datetime
+import json
+
+def main():
+    sioadata = {}
+    pubrecords = []
+    mapping = []
+    
+    stats = {
+        'sio-match': 0,
+        'sio-nomatch': 0,
+        'sio-nomatch-pbe': 0,
+    }
+
+    jsonname = 'postjournal-sioa-2018-map.json'
+    with open(jsonname) as json_data:
+        mapping = json.load(json_data)
+
+    jsonname = 'npe-sioa.json'
+    with open(jsonname) as json_data:
+        j = json.load(json_data)
+        pubrecords = j['documents']
+#        print(pubrecords)
+
+    # Convert to datetime object
+    for r in pubrecords:
+#        print(r)
+        for field in ('document_date', 'document_recorded_date'):
+            if field in r:
+                r[field] = datetime.datetime.strptime(r[field], "%Y-%m-%d").date()
+
+    csvname = "postjournal-sioa-2018.tsv"
+    with open(csvname, 'r') as csvfile:
+        csvdata = csv.reader(csvfile, delimiter='\t', quotechar='"')
+        header = next(csvdata)
+        for row in csvdata:
+            docid = int(row[0])
+            if docid in sioadata:
+                print("error: ignoring entry with duplicate document id %s in %s" % (docid, csvname))
+            else:
+                row[1] = datetime.datetime.strptime(row[1].split()[0],
+                                                    "%d.%m.%Y").date()
+                sioadata[docid] = row[1:]
+#    print(sioadata)
+
+    for docid in sioadata.keys():
+        docdate = sioadata[docid][0]
+        print('')
+        print("SiOA #%d %s %s" % (docid, docdate, sioadata[docid][1]))
+
+        # See if we already found a mapping
+        match = None
+        for map in mapping:
+            for mapdocid in map['sioa']:
+#                print("Checking if docid %d matches %d" % (docid, mapdocid))
+                if docid == mapdocid:
+                    match = []
+                    if 'npe' in map:
+                        for id in map['npe']:
+                            found = False
+                            for record in pubrecords:
+                                if record['id'] == id:
+                                    record['_flag'] = '*'
+                                    match.append(record)
+                                    found = True
+                            if not found:
+                                record = {
+                                    'id': id,
+                                    '_flag': '*',
+                                    'docdate': sioadata[docid][0],
+                                    'document_title': 'unknown',
+                                    'entity_id': 'unknown',
+                                }
+                                match.append(record)
+                    break
+            if match:
+                break
+        if match:
+            stats['sio-match'] += 1
+        else:
+            stats['sio-nomatch'] += 1
+            if -1 != sioadata[docid][1].find("PBE") or \
+               -1 != sioadata[docid][1].find("pbe"):
+                stats['sio-nomatch-pbe'] += 1
+#        print(match)
+        if not match:
+            match = []
+            for record in pubrecords:
+                inrange = False
+                for field in ('document_recorded_date', 'document_date'):
+                    if field in record and neardate(docdate, record[field], 31):
+                        inrange = True
+                if inrange:
+                    record['docdate'] = record[field]
+                    match.append(record)
+        for record in sorted(match, key=lambda k: k['docdate']):
+            print(" %s %s %s (%s \"%s\")" % (
+                '*' if '_flag' in record else ' ',
+                record['docdate'],
+                record['document_title'],
+                record['entity_id'],
+                record['id'])
+            )
+    print(stats)
+
+def neardate(date, test, spread):
+    delta = datetime.timedelta(days=spread)
+    return test < date + delta and test > date - delta
+
+if '__main__' == __name__:
+    main()
+

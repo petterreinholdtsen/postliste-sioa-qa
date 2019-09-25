@@ -1,0 +1,109 @@
+[
+    {
+	"sioa" : [50824],
+	"npe": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/4770-22"]
+    },
+    {
+	"note": "SiOA ikke listet som mottaker i npe",
+	"sioa": [50837],
+	"npe": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/5373-8"]
+    },
+    {
+	"sioa": [51080],
+	"npe": [
+	    "_data-store_documents-dir-helse_2018-02.json-2018/2677-3"
+	]
+    },
+    {
+	"sioa": [51696],
+	"npe": [
+	    "_data-store_documents-diku_2018-08.json-2018/16-44"
+	]
+    },
+    {
+	"sioa": [51712],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-06.json-2017/4770-28"
+	]
+    },
+    {
+	"sioa": [51712],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-06.json-2017/4770-28"
+	]
+    },
+    {
+	"sioa": [52122],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-1"
+	]
+    },
+    {
+	"sioa": [52123],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-2"
+	]
+    },
+    {
+	"sioa": [52541],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-08.json-2018/4059-1"
+	]
+    },
+    {
+	"sioa": [52550],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-09.json-2017/4770-69"
+	]
+    },
+    {
+	"sioa": [52688],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-09.json-2018/5042-1"
+	]
+    },
+    {
+	"sioa": [52718],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-09.json-2018/2185-14"
+	]
+    },
+    {
+	"sioa": [52782],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/5000-1"
+	]
+    },
+    {
+	"sioa": [52851],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/2185-15"
+	]
+    },
+    {
+	"sioa": [52982],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/5498-1"
+	]
+    },
+    {
+	"sioa": [52983],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/5571-1"
+	]
+    },
+    {
+	"sioa": [53329],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-1"
+	]
+    },
+    {
+	"note": "Kunnskapsbyen Lillestrøm er forening, ikke en offentlig etat",
+	"sioa": [53371]
+    },
+    {
+	"sioa" : [ 53213, 53214 ],
+	"npe": [ "_data-store_documents-0301-oslo-kommune_2018-11.json-2017/18294-44" ]
+    }
+]
