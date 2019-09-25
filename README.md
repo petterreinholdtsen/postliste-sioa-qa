@@ -8,7 +8,7 @@ medlemsinstitusjoner, myndigheter og andre".  Postlistene skal
 publiseres ukentlig og inneholde "all inn- og utgående post som er
 journalført uken før".
 
-Nettsiden om SiOA[2] forteller videre under overskriften "Innsyn og
+Nettsiden om SiOA([2]) forteller videre under overskriften "Innsyn og
 åpenhet" at "Vi publiserer informasjon som møteplaner, sakslister og
 referater fra hovedstyrets møter, i tillegg til informasjon fra
 hovedstyret og ulike delstyrer.Vi gir også innsynsrett i
@@ -30,12 +30,12 @@ og se om SiOA lykkes med å registrere det de sier skal registreres i
 postjournalene.
 
 Metoden er å sammenligne offentlige postjournaler tilgjengelig via
-Norske Postjournaler[4], og se om det som er sendt og mottatt hos
+Norske Postjournaler([4]), og se om det som er sendt og mottatt hos
 offentlige kontorer til/fra SiOA er journalført hos SiOA.
 
 Postjournalen tilgjengelig fra SiOA([5]) må konverteres fra PDF til
 databaseformat for enkel sammenligning.  Det gjøres antagelig greiest
 med [pdftable](http://sourceforge.net/projects/pdftable).
 
- [4]: https://www.sio.no/snarveier/om-sio/rapporter-og-referater "Rapporter og referater"
- [5]: https://norske-postlister.no/?query=%28document_from_org.orgnummer%3A948554062%29+OR+%28document_to_org.orgnummer%3A948554062%29&json
+ [4]: https://norske-postlister.no/?query=%28document_from_org.orgnummer%3A948554062%29+OR+%28document_to_org.orgnummer%3A948554062%29&json
+ [5]: https://www.sio.no/snarveier/om-sio/rapporter-og-referater "Rapporter og referater"
