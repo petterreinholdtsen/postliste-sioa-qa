@@ -19,7 +19,7 @@ innsyn, og eventuell sensitiv informasjon vil bli fjernet."
 Men blir det gjort?
 
 Litt historikk rundt åpenhetspolicyen til SiOA finnes fra en
-evaluering gjort av velferdstinget([3]).
+evaluering gjort av velferdstinget([3]) i 2012.
 
  [1]: http://webhttp.sio.no/files/info/files/postlister/Apenhetspolicy_SiO_web.pdf "Policy for åpenhet og tilgjengelighet"
  [2]: https://www.sio.no/snarveier/om-sio "On SiO"
