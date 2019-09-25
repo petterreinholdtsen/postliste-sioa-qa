@@ -15,6 +15,12 @@
 	]
     },
     {
+	"sioa": [51509],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2018-04.json-2018/78-20"
+	]
+    },
+    {
 	"sioa": [51696],
 	"npe": [
 	    "_data-store_documents-diku_2018-08.json-2018/16-44"
@@ -78,6 +84,12 @@
 	"sioa": [52851],
 	"npe": [
 	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/2185-15"
+	]
+    },
+    {
+	"sioa": [52867],
+	"npe": [
+	    "_data-store_documents-0301-oslo-kommune_2018-11.json-2018/928-20"
 	]
     },
     {
