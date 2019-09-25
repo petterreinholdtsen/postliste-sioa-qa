@@ -13,6 +13,7 @@ def main():
         'sio-match': 0,
         'sio-nomatch': 0,
         'sio-nomatch-pbe': 0,
+        'npl-count': 0,
     }
 
     jsonname = 'postjournal-sioa-2018-map.json'
@@ -23,14 +24,15 @@ def main():
     with open(jsonname) as json_data:
         j = json.load(json_data)
         pubrecords = j['documents']
-#        print(pubrecords)
 
-    # Convert to datetime object
-    for r in pubrecords:
-#        print(r)
-        for field in ('document_date', 'document_recorded_date'):
-            if field in r:
-                r[field] = datetime.datetime.strptime(r[field], "%Y-%m-%d").date()
+    # Convert to datetime object and store the preferred date as _docdate
+    for record in pubrecords:
+#        print(record)
+        for field in ('document_recorded_date', 'document_date'):
+            if field in record:
+                record[field] = datetime.datetime.strptime(record[field],
+                                                           "%Y-%m-%d").date()
+                record['_docdate'] = record[field]
 
     csvname = "postjournal-sioa-2018.tsv"
     with open(csvname, 'r') as csvfile:
@@ -70,7 +72,7 @@ def main():
                                 record = {
                                     'id': id,
                                     '_flag': '*',
-                                    'docdate': sioadata[docid][0],
+                                    '_docdate': sioadata[docid][0],
                                     'document_title': 'unknown',
                                     'entity_id': 'unknown',
                                 }
@@ -90,20 +92,28 @@ def main():
             match = []
             for record in pubrecords:
                 inrange = False
-                for field in ('document_recorded_date', 'document_date'):
-                    if field in record and neardate(docdate, record[field], 31):
-                        inrange = True
-                if inrange:
-                    record['docdate'] = record[field]
+                if neardate(docdate, record['_docdate'], 31):
                     match.append(record)
-        for record in sorted(match, key=lambda k: k['docdate']):
+        for record in sorted(match, key=lambda k: k['_docdate']):
             print(" %s %s %s (%s \"%s\")" % (
                 '*' if '_flag' in record else ' ',
-                record['docdate'],
+                record['_docdate'],
                 record['document_title'],
                 record['entity_id'],
                 record['id'])
             )
+    # Count public records to SiOA between first and last flagged entry
+    mindate = datetime.date(year=2018, month=1, day=1)
+    maxdate = datetime.date(year=2018, month=12, day=31)
+    for record in sorted(pubrecords, key=lambda k: k['_docdate']):
+        if '_flag' in record:
+            if mindate > record['_docdate']:
+                mindate = record['_docdate']
+            if maxdate < record['_docdate']:
+                maxdate = record['_docdate']
+        if mindate <= record['_docdate'] and record['_docdate'] <= maxdate:
+            stats['npl-count'] += 1
+    print("Period measured for NPL: %s - %s" % (mindate, maxdate))
     print(stats)
 
 def neardate(date, test, spread):
