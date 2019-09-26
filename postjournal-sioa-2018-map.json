@@ -4,9 +4,16 @@
 	"npe": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/4770-22"]
     },
     {
-	"note": "SiOA ikke listet som mottaker i npe",
+	"note": "SiOA ikke listet som mottaker i npl",
 	"sioa": [50837],
 	"npe": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/5373-8"]
+    },
+    {
+	"note": "dokumentet mangler i einnsyn og npe, npe-dummy",
+	"sioa": [50858],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_?.json-2018/78-1"
+	]
     },
     {
 	"sioa": [51080],
@@ -36,6 +43,14 @@
 	"sioa": [51712],
 	"npe": [
 	    "_data-store_documents-dep-kunnskap_2018-06.json-2017/4770-28"
+	]
+    },
+    {
+	"note": "avsender (PBE) er ikke i NPL, kun et par av mottakerne, SiOA ikke listet som mottaker i npl",
+	"sioa": [51738],
+	"npe": [
+	    "_data-store_documents-0301-oslo-kommune_2018-05.json-2012/3530-65",
+	    "_data-store_documents-fylkesmannen-i-oslo-og-akershus_2018-05.json-2018/11371-1"
 	]
     },
     {
@@ -105,6 +120,13 @@
 	]
     },
     {
+	"note": "dokumentet mangler i npl, npl-dummy",
+	"sioa": [53156],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_?.json-2018/5495-1"
+	]
+    },
+    {
 	"sioa": [53329],
 	"npe": [
 	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-1"
@@ -117,5 +139,26 @@
     {
 	"sioa" : [ 53213, 53214 ],
 	"npe": [ "_data-store_documents-0301-oslo-kommune_2018-11.json-2017/18294-44" ]
+    },
+    {
+	"note": "dokumentet mangler i npl, npl-dummy",
+	"sioa": [53408],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_?.json-2018/3746-7"
+	]
+    },
+    {
+	"note": "dokumentet mangler i npl, npl-dummy",
+	"sioa": [53425],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_?.json-2018/78-34"
+	]
+    },
+    {
+	"note": "dokumentet mangler i npl, npl-dummy",
+	"sioa": [53438],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_?.json-2018/78-35"
+	]
     }
 ]
