@@ -1,0 +1,44 @@
+[
+    {
+	"sioa" : [ 48297 ],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-05.json-2016/7144-40"
+	]
+    },
+    {
+	"sioa" : [ 48415 ],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-05.json-2016/7144-41"
+	]
+    },
+    {
+	"sioa" : [ 48657 ],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-06.json-2016/7144-45"
+	]
+    },
+    {
+	"sioa" : [ 48668 ],
+	"npe": [
+	    "_data-store_documents-0301-oslo-kommune_2017-06.json-2017/3269-2"
+	]
+    },
+    {
+	"sioa" : [ 49996 ],
+	"npe": [
+	    "_data-store_documents-datatilsynet_2017-09.json-2017/1363-2"
+	]
+    },
+    {
+	"sioa" : [ 50562 ],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-11.json-2017/4770-13"
+	]
+    },
+    {
+	"sioa" : [ 50746 ],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-12.json-2016/4744-9"
+	]
+    }
+]
