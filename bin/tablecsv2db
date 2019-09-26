@@ -18,7 +18,6 @@ debug = False
 
 order = ['Doc #',
          'Endret dato',
-         'Sist endret d',
          'Tittel',
          'Saksbehandler',
          'Applikasjon',
@@ -68,7 +67,8 @@ def main():
                             fieldseen['Tittel'] = 1
                         else:
                             # Hack to work around inconsistent lists
-                            if 'Sist endret dato' == header[i]:
+                            if 'Sist endret dato' == header[i] or\
+                               'Sist endret d' == header[i]:
                                 header[i] = 'Endret dato'
                             if 'Forfatternavn' == header[i]:
                                 header[i] = 'Saksbehandler'
