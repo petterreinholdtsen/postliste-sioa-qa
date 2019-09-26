@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 
+import argparse
 import csv
 import datetime
 import json
 
 def main():
-
-    year = 2018
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-y', '--year', type=int, default=2018,
+                        help="select year to process")
+    args = parser.parse_args()
+    year = args.year
 
     sioadata = {}
     pubrecords = []
