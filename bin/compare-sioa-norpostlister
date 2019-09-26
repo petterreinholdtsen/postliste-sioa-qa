@@ -53,8 +53,6 @@ def main():
 
     for docid in sioadata.keys():
         docdate = sioadata[docid][0]
-        print('')
-        print("SiOA #%d %s %s" % (docid, docdate, sioadata[docid][1]))
 
         # See if we already found a mapping
         match = None
@@ -97,6 +95,13 @@ def main():
                 inrange = False
                 if neardate(docdate, record['_docdate'], 31):
                     match.append(record)
+
+        print('')
+        print("%s SiOA #%d %s %s" % (
+            "x" if 1 == len(match) and '_flag' in match[0] else " ",
+            docid, docdate, sioadata[docid][1])
+        )
+
         for record in sorted(match, key=lambda k: k['_docdate']):
             print(" %s %s %s (%s \"%s\")" % (
                 '*' if '_flag' in record else ' ',
