@@ -86,6 +86,8 @@ def main():
         log(str(entry))
         for field in order:
             if field in entry:
+                if -1 != entry[field].find('"'):
+                    entry[field] = '"%s"' % entry[field].replace('"', '""')
                 row.append(entry[field])
         print("\t".join(row))
     return data
