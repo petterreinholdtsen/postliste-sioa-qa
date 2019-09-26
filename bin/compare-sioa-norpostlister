@@ -5,6 +5,9 @@ import datetime
 import json
 
 def main():
+
+    year = 2018
+
     sioadata = {}
     pubrecords = []
     mapping = []
@@ -16,7 +19,7 @@ def main():
         'npl-count': 0,
     }
 
-    jsonname = 'postjournal-sioa-2018-map.json'
+    jsonname = 'postjournal-sioa-%d-map.json' % year
     with open(jsonname) as json_data:
         mapping = json.load(json_data)
 
@@ -34,7 +37,7 @@ def main():
                                                            "%Y-%m-%d").date()
                 record['_docdate'] = record[field]
 
-    csvname = "postjournal-sioa-2018.tsv"
+    csvname = "postjournal-sioa-%d.tsv" % year
     with open(csvname, 'r') as csvfile:
         csvdata = csv.reader(csvfile, delimiter='\t', quotechar='"')
         header = next(csvdata)
@@ -103,8 +106,8 @@ def main():
                 record['id'])
             )
     # Count public records to SiOA between first and last flagged entry
-    mindate = datetime.date(year=2018, month=1, day=1)
-    maxdate = datetime.date(year=2018, month=12, day=31)
+    mindate = datetime.date(year=year, month=1, day=1)
+    maxdate = datetime.date(year=year, month=12, day=31)
     for record in sorted(pubrecords, key=lambda k: k['_docdate']):
         if '_flag' in record:
             if mindate > record['_docdate']:
