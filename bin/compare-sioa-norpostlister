@@ -87,8 +87,8 @@ def main():
             stats['sio-match'] += 1
         else:
             stats['sio-nomatch'] += 1
-            if -1 != sioadata[docid][1].find("PBE") or \
-               -1 != sioadata[docid][1].find("pbe"):
+            # Count PBE related documents while PBE is missing from NPL
+            if -1 != sioadata[docid][1].lower().find("pbe"):
                 stats['sio-nomatch-pbe'] += 1
 #        print(match)
         if not match:
