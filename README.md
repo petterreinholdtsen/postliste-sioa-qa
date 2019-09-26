@@ -22,7 +22,7 @@ Litt historikk rundt åpenhetspolicyen til SiOA finnes fra en
 evaluering gjort av velferdstinget([3]) i 2012.
 
  [1]: http://webhttp.sio.no/files/info/files/postlister/Apenhetspolicy_SiO_web.pdf "Policy for åpenhet og tilgjengelighet"
- [2]: https://www.sio.no/snarveier/om-sio "On SiO"
+ [2]: https://www.sio.no/snarveier/om-sio "Om SiO"
  [3]: http://www.studentvelferd.no/dokumenter/2012/04/Vedlegg-til-evaluering-av-SiOs-%25C3%25A5penthetspolicy.pdf "Vedlegg til Evaluering av SiOs åpenhetspolicy"
 
 Det hadde vært interessant å kvalitetssikre postjournalene til SiOA,
