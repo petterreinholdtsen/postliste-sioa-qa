@@ -21,6 +21,7 @@ def main():
         'sio-nomatch': 0,
         'sio-nomatch-pbe': 0,
         'npl-count': 0,
+        'npl-count-sioa': 0,
     }
 
     jsonname = 'postjournal-sioa-%d-map.json' % year
@@ -114,6 +115,7 @@ def main():
                 record['entity_id'],
                 record['id'])
             )
+
     # Count public records to SiOA between first and last flagged entry
     mindate = datetime.date(year=year, month=1, day=1)
     maxdate = datetime.date(year=year, month=12, day=31)
@@ -125,6 +127,8 @@ def main():
                 maxdate = record['_docdate']
         if mindate <= record['_docdate'] and record['_docdate'] <= maxdate:
             stats['npl-count'] += 1
+            if '_flag' in record:            
+                stats['npl-count-sioa'] += 1
     print("Period measured for NPL: %s - %s" % (mindate, maxdate))
     print(stats)
 
