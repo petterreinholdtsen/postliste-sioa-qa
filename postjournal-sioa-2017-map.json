@@ -1,5 +1,23 @@
 [
     {
+	"sioa" : [47083],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-01.json-2016/1953-10"
+	]
+    },
+    {
+	"sioa" : [47161],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-01.json-2017/44-1"
+	]
+    },
+    {
+	"sioa" : [47204],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-01.json-2017/44-2"
+	]
+    },
+    {
 	"sioa" : [ 47953 ],
 	"npe": [
 	    "_data-store_documents-utdanning-uib_2017-03.json-2014/9747-5"
@@ -30,9 +48,57 @@
 	]
     },
     {
+	"sioa" : [49660],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-07.json-2017/3442-1"
+	]
+    },
+    {
 	"sioa" : [ 49996 ],
 	"npe": [
 	    "_data-store_documents-datatilsynet_2017-09.json-2017/1363-2"
+	]
+    },
+    {
+	"sioa" : [50146],
+	"npe": [
+	    "_data-store_documents-0301-oslo-kommune_2017-09.json-2012/3530-29"
+	]
+    },
+    {
+	"sioa" : [50190],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-10.json-2017/4471-1"
+	]
+    },
+    {
+	"sioa" : [50318],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-10.json-2017/4801-1"
+	]
+    },
+    {
+	"sioa" : [50344],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-10.json-2017/4770-1"
+	]
+    },
+    {
+	"sioa" : [50367],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-10.json-2017/4801-1"
+	]
+    },
+    {
+	"sioa" : [50368],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-10.json-2017/4602-2"
+	]
+    },
+    {
+	"sioa" : [50438],
+	"npe": [
+	    "_data-store_documents-dir-helse_2017-10.json-2017/30285-4"
 	]
     },
     {
@@ -51,6 +117,12 @@
 	"sioa" : [50564],
 	"npe": [
 	    "_data-store_documents-dir-helse_2017-11.json-2017/30283-3"
+	]
+    },
+    {
+	"sioa" : [50593, 50600],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-11.json-2017/5100-1"
 	]
     },
     {
