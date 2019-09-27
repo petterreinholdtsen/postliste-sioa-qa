@@ -17,9 +17,9 @@ def main():
     mapping = []
     
     stats = {
-        'sio-match': 0,
-        'sio-nomatch': 0,
-        'sio-nomatch-pbe': 0,
+        'sioa-match': 0,
+        'sioa-nomatch': 0,
+        'sioa-nomatch-pbe': 0,
         'npl-count': 0,
         'npl-count-sioa': 0,
     }
@@ -28,7 +28,7 @@ def main():
     with open(jsonname) as json_data:
         mapping = json.load(json_data)
 
-    jsonname = 'npe-sioa.json'
+    jsonname = 'npl-sioa.json'
     with open(jsonname) as json_data:
         j = json.load(json_data)
         pubrecords = j['documents']
@@ -66,8 +66,8 @@ def main():
 #                print("Checking if docid %d matches %d" % (docid, mapdocid))
                 if docid == mapdocid:
                     match = []
-                    if 'npe' in map:
-                        for id in map['npe']:
+                    if 'npl' in map:
+                        for id in map['npl']:
                             found = False
                             for record in pubrecords:
                                 if record['id'] == id:
@@ -87,12 +87,12 @@ def main():
             if match:
                 break
         if match:
-            stats['sio-match'] += 1
+            stats['sioa-match'] += 1
         else:
-            stats['sio-nomatch'] += 1
+            stats['sioa-nomatch'] += 1
             # Count PBE related documents while PBE is missing from NPL
             if -1 != sioadata[docid][1].lower().find("pbe"):
-                stats['sio-nomatch-pbe'] += 1
+                stats['sioa-nomatch-pbe'] += 1
 #        print(match)
         if not match:
             match = []

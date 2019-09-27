@@ -1,134 +1,134 @@
 [
     {
 	"sioa" : [50824],
-	"npe": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/4770-22"]
+	"npl": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/4770-22"]
     },
     {
 	"note": "SiOA ikke listet som mottaker i npl",
 	"sioa": [50837],
-	"npe": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/5373-8"]
+	"npl": ["_data-store_documents-dep-kunnskap_2018-01.json-2017/5373-8"]
     },
     {
-	"note": "dokumentet mangler i einnsyn og npe, npe-dummy",
+	"note": "dokumentet mangler i einnsyn og npl, npe-dummy",
 	"sioa": [50858],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_?.json-2018/78-1"
 	]
     },
     {
 	"sioa": [51080],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dir-helse_2018-02.json-2018/2677-3"
 	]
     },
     {
 	"sioa": [51509],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-04.json-2018/78-20"
 	]
     },
     {
 	"sioa": [51696],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-diku_2018-08.json-2018/16-44"
 	]
     },
     {
 	"sioa": [51712],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-06.json-2017/4770-28"
 	]
     },
     {
 	"sioa": [51712],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-06.json-2017/4770-28"
 	]
     },
     {
 	"note": "avsender (PBE) er ikke i NPL, kun et par av mottakerne, SiOA ikke listet som mottaker i npl",
 	"sioa": [51738],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-0301-oslo-kommune_2018-05.json-2012/3530-65",
 	    "_data-store_documents-fylkesmannen-i-oslo-og-akershus_2018-05.json-2018/11371-1"
 	]
     },
     {
 	"sioa": [52122],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-1"
 	]
     },
     {
 	"sioa": [52123],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-2"
 	]
     },
     {
 	"sioa": [52541],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-08.json-2018/4059-1"
 	]
     },
     {
 	"sioa": [52550],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-09.json-2017/4770-69"
 	]
     },
     {
 	"sioa": [52688],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-09.json-2018/5042-1"
 	]
     },
     {
 	"sioa": [52718],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-09.json-2018/2185-14"
 	]
     },
     {
 	"sioa": [52782],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/5000-1"
 	]
     },
     {
 	"sioa": [52851],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/2185-15"
 	]
     },
     {
 	"sioa": [52867],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-0301-oslo-kommune_2018-11.json-2018/928-20"
 	]
     },
     {
 	"sioa": [52982],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/5498-1"
 	]
     },
     {
 	"sioa": [52983],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-10.json-2018/5571-1"
 	]
     },
     {
 	"note": "dokumentet mangler i npl, npl-dummy",
 	"sioa": [53156],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_?.json-2018/5495-1"
 	]
     },
     {
 	"sioa": [53329],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-1"
 	]
     },
@@ -138,26 +138,26 @@
     },
     {
 	"sioa" : [ 53213, 53214 ],
-	"npe": [ "_data-store_documents-0301-oslo-kommune_2018-11.json-2017/18294-44" ]
+	"npl": [ "_data-store_documents-0301-oslo-kommune_2018-11.json-2017/18294-44" ]
     },
     {
 	"note": "dokumentet mangler i npl, npl-dummy",
 	"sioa": [53408],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_?.json-2018/3746-7"
 	]
     },
     {
 	"note": "dokumentet mangler i npl, npl-dummy",
 	"sioa": [53425],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_?.json-2018/78-34"
 	]
     },
     {
 	"note": "dokumentet mangler i npl, npl-dummy",
 	"sioa": [53438],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_?.json-2018/78-35"
 	]
     }
