@@ -1,5 +1,17 @@
 [
     {
+	"sioa" : [53505],
+	"npe": [
+	    "_data-store_documents-dir-helse_?.json-2017/30285-10"
+	]
+    },
+    {
+	"sioa" : [53506],
+	"npe": [
+	    "_data-store_documents-dir-helse_?.json-2017/30285-11"
+	]
+    },
+    {
 	"sioa" : [53513],
 	"npe": [
 	    "_data-store_documents-0301-oslo-kommune_2019-01.json-2018/14974-6"
