@@ -1,0 +1,20 @@
+[
+    {
+	"sioa" : [53513],
+	"npe": [
+	    "_data-store_documents-0301-oslo-kommune_2019-01.json-2018/14974-6"
+	]
+    },
+    {
+	"sioa" : [53795],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2019-02.json-2019/426-1"
+	]
+    },
+    {
+	"sioa" : [53904],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2019-03.json-2019/1139-1"
+	]
+    }
+]
