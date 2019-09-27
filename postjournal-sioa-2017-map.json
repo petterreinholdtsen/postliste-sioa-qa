@@ -1,5 +1,11 @@
 [
     {
+	"sioa" : [ 47953 ],
+	"npe": [
+	    "_data-store_documents-utdanning-uib_2017-03.json-2014/9747-5"
+	]
+    },
+    {
 	"sioa" : [ 48297 ],
 	"npe": [
 	    "_data-store_documents-dep-kunnskap_2017-05.json-2016/7144-40"
@@ -30,9 +36,21 @@
 	]
     },
     {
+	"sioa" : [50485],
+	"npe": [
+	    "_data-store_documents-0301-oslo-kommune_2017-11.json-2017/3656-20"
+	]
+    },
+    {
 	"sioa" : [ 50562 ],
 	"npe": [
 	    "_data-store_documents-dep-kunnskap_2017-11.json-2017/4770-13"
+	]
+    },
+    {
+	"sioa" : [50564],
+	"npe": [
+	    "_data-store_documents-dir-helse_2017-11.json-2017/30283-3"
 	]
     },
     {
