@@ -48,6 +48,12 @@
 	]
     },
     {
+	"sioa" : [49620],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-06.json-2017/3201-1"
+	]
+    },
+    {
 	"sioa" : [49660],
 	"npe": [
 	    "_data-store_documents-dep-kunnskap_2017-07.json-2017/3442-1"
@@ -57,6 +63,12 @@
 	"sioa" : [ 49996 ],
 	"npe": [
 	    "_data-store_documents-datatilsynet_2017-09.json-2017/1363-2"
+	]
+    },
+    {
+	"sioa" : [49971],
+	"npe": [
+	    "_data-store_documents-dep-kunnskap_2017-09.json-2017/4176-1"
 	]
     },
     {
