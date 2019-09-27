@@ -1,32 +1,44 @@
 [
     {
 	"sioa" : [53505],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dir-helse_?.json-2017/30285-10"
 	]
     },
     {
 	"sioa" : [53506],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dir-helse_?.json-2017/30285-11"
 	]
     },
     {
 	"sioa" : [53513],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-0301-oslo-kommune_2019-01.json-2018/14974-6"
 	]
     },
     {
 	"sioa" : [53795],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2019-02.json-2019/426-1"
 	]
     },
     {
 	"sioa" : [53904],
-	"npe": [
+	"npl": [
 	    "_data-store_documents-dep-kunnskap_2019-03.json-2019/1139-1"
+	]
+    },
+    {
+	"sioa" : [54005],
+	"npl": [
+	    "_data-store_documents-diku_2019-03.json-2019/240-1"
+	]
+    },
+    {
+	"sioa" : [54035],
+	"npl": [
+            "_data-store_documents-dep-kunnskap_?.json-2018/2333-6"
 	]
     }
 ]
