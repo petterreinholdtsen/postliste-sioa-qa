@@ -24,9 +24,21 @@
 	]
     },
     {
+	"sioa" : [53895],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_?.json-2019/812-1"
+	]
+    },
+    {
 	"sioa" : [53904],
 	"npl": [
 	    "_data-store_documents-dep-kunnskap_2019-03.json-2019/1139-1"
+	]
+    },
+    {
+	"sioa" : [53934],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2019-03.json-2019/1010-1"
 	]
     },
     {
@@ -39,6 +51,30 @@
 	"sioa" : [54035],
 	"npl": [
             "_data-store_documents-dep-kunnskap_?.json-2018/2333-6"
+	]
+    },
+    {
+	"sioa" : [54199],
+	"npl": [
+            "_data-store_documents-dep-kunnskap_?.json-2018/6637-2"
+	]
+    },
+    {
+	"sioa" : [54446],
+	"npl": [
+            "_data-store_documents-dep-kunnskap_?.json-2019/1810-3"
+	]
+    },
+    {
+	"sioa" : [54627],
+	"npl": [
+            "_data-store_documents-dep-kunnskap_?.json-2019/3208-1"
+	]
+    },
+    {
+	"sioa" : [54868],
+	"npl": [
+            "_data-store_documents-dep-kunnskap_?.json-2019/3142-6"
 	]
     }
 ]
