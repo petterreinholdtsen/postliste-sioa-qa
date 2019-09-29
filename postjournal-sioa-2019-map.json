@@ -66,9 +66,21 @@
 	]
     },
     {
+	"sioa" : [54449],
+	"npl": [
+            "_data-store_documents-diku_?.json-2019/31-15"
+	]
+    },
+    {
 	"sioa" : [54627],
 	"npl": [
             "_data-store_documents-dep-kunnskap_?.json-2019/3208-1"
+	]
+    },
+    {
+	"sioa" : [54818],
+	"npl": [
+            "_data-store_documents-dir-bygg_?.json-2019/6087-1"
 	]
     },
     {
