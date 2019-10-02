@@ -127,6 +127,13 @@
 	]
     },
     {
+	"note": "dokumentet mangler i npl og einnsyn, npl-dummy",
+	"sioa": [53227],
+	"npl": [
+	    "_data-store_documents-datatilsynet_?.json-2018/3443-2"
+	]
+    },
+    {
 	"sioa": [53329],
 	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-07.json-2018/3849-1"
