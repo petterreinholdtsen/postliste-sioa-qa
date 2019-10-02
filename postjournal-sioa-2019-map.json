@@ -60,6 +60,13 @@
 	]
     },
     {
+	"note": "dokumentet mangler i npl og einnsyn, npl-dummy",
+	"sioa" : [54180],
+	"npl": [
+            "_data-store_documents-dir-bygg_?.json-2019/3028-1"
+	]
+    },
+    {
 	"sioa" : [54199],
 	"npl": [
             "_data-store_documents-dep-kunnskap_?.json-2018/6637-2"
