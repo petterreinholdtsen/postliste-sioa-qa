@@ -20,6 +20,7 @@ def main():
         'sioa-match': 0,
         'sioa-nomatch': 0,
         'sioa-nomatch-pbe': 0,
+        'sioa-not-npl': 0,
         'npl-count': 0,
         'npl-count-sioa': 0,
     }
@@ -83,6 +84,7 @@ def main():
                                     'entity_id': 'unknown',
                                 }
                                 match.append(record)
+                                stats['sioa-not-npl'] += 1
                     break
             if match:
                 break
