@@ -37,5 +37,5 @@ Postjournalen tilgjengelig fra SiOA([5]) må konverteres fra PDF til
 databaseformat for enkel sammenligning.  Det gjøres antagelig greiest
 med [pdftable](http://sourceforge.net/projects/pdftable).
 
- [4]: https://norske-postlister.no/?query=%28document_from_org.orgnummer%3A948554062%29+OR+%28document_to_org.orgnummer%3A948554062%29
+ [4]: https://norske-postlister.no/?query=%28document_from_org.orgnummer%3A948554062%29+OR+%28document_to_org.orgnummer%3A948554062%29+OR+%28document_from_org.orgnummer%3A960658493%29+OR+%28document_to_org.orgnummer%3A960658493%29+OR+%28document_from_org.orgnummer%3A974104725%29++OR+%28document_to_org.orgnummer%3A974104725%29+OR+document_from%3A%22studentsamskipnaden+i+oslo%22+OR+document_to%3A%22studentsamskipnaden+i+oslo%22+OR+document_from%3A%22studentsamskipsn+i+oslo%22+OR+document_to%3A%22studentsamskipsn+i+oslo%22
  [5]: https://www.sio.no/snarveier/om-sio/rapporter-og-referater "Rapporter og referater"
