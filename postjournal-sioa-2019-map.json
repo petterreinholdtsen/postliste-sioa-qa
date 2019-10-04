@@ -97,6 +97,12 @@
 	]
     },
     {
+	"sioa" : [54645],
+	"npl": [
+	    "_data-store_documents-0301-oslo-kommune_pbe_?.json-2016/8760-?"
+	]
+    },
+    {
 	"note": "dokumentet mangler i npl og einnsyn, npl-dummy",
 	"sioa" : [54812],
 	"npl": [
