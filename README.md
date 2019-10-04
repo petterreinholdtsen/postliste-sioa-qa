@@ -16,7 +16,8 @@ korrespondansen vår med ukentlige oversikter over all inn- og utgående
 post fra uken før.  Obs: Enkelte dokumenter vil være skjermet fra
 innsyn, og eventuell sensitiv informasjon vil bli fjernet."
 
-Men blir det gjort?
+Men blir det laget ukentlige oversikter over all inn- ug utgående post
+fra uken før?
 
 Litt historikk rundt åpenhetspolicyen til SiOA finnes fra en
 evaluering gjort av velferdstinget([3]) i 2012.
@@ -33,9 +34,9 @@ Metoden er å sammenligne offentlige postjournaler tilgjengelig via
 Norske Postjournaler([4]), og se om det som er sendt og mottatt hos
 offentlige kontorer til/fra SiOA er journalført hos SiOA.
 
-Postjournalen tilgjengelig fra SiOA([5]) må konverteres fra PDF til
-databaseformat for enkel sammenligning.  Det gjøres antagelig greiest
-med [pdftable](http://sourceforge.net/projects/pdftable).
+Postjournalen tilgjengelig fra SiOA([5]) ble omformet fra PDF til
+databaseformat for enkel sammenligning ved hjelp av
+[pdftable](http://sourceforge.net/projects/pdftable).
 
  [4]: https://norske-postlister.no/?query=%28document_from_org.orgnummer%3A948554062%29+OR+%28document_to_org.orgnummer%3A948554062%29+OR+%28document_from_org.orgnummer%3A960658493%29+OR+%28document_to_org.orgnummer%3A960658493%29+OR+%28document_from_org.orgnummer%3A974104725%29++OR+%28document_to_org.orgnummer%3A974104725%29+OR+document_from%3A%22studentsamskipnaden+i+oslo%22+OR+document_to%3A%22studentsamskipnaden+i+oslo%22+OR+document_from%3A%22studentsamskipsn+i+oslo%22+OR+document_to%3A%22studentsamskipsn+i+oslo%22
  [5]: https://www.sio.no/snarveier/om-sio/rapporter-og-referater "Rapporter og referater"
