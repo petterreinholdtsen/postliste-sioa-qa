@@ -97,7 +97,8 @@
 	]
     },
     {
-	"note": "dokumentet mangler i einnsyn og pbes postjournal, dummy",
+	"note": "eposten mangler i einnsyn og pbes postjournal, dummy",
+	"mimesbronn": "https://www.mimesbronn.no/request/studentboliger_i_brenneriveien_1",
 	"sioa" : [54645],
 	"npl": [
 	    "_data-store_documents-0301-oslo-kommune_pbe_?.json-2016/8760-?"
