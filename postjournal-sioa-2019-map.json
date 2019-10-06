@@ -32,7 +32,7 @@
     {
 	"sioa" : [53895],
 	"npl": [
-	    "_data-store_documents-dep-kunnskap_?.json-2019/812-1"
+	    "_data-store_documents-dep-kunnskap_2019-03.json-2019/812-1"
 	]
     },
     {
@@ -56,20 +56,20 @@
     {
 	"sioa" : [54035],
 	"npl": [
-            "_data-store_documents-dep-kunnskap_?.json-2018/2333-6"
+            "_data-store_documents-dep-kunnskap_2019-02.json-2018/2333-6"
 	]
     },
     {
 	"note": "dokumentet mangler i npl og einnsyn, npl-dummy",
 	"sioa" : [54180],
 	"npl": [
-            "_data-store_documents-dir-bygg_?.json-2019/3028-1"
+            "_data-store_documents-dir-byggkvalitet_?.json-2019/3028-1"
 	]
     },
     {
 	"sioa" : [54199],
 	"npl": [
-            "_data-store_documents-dep-kunnskap_?.json-2018/6637-2"
+            "_data-store_documents-dep-kunnskap_2019-04.json-2018/6637-2"
 	]
     },
     {
@@ -105,22 +105,21 @@
 	]
     },
     {
-	"note": "dokumentet mangler i npl og einnsyn, npl-dummy",
 	"sioa" : [54812],
 	"npl": [
-            "_data-store_documents-datatilsynet_?.json-2019/1788-2"
+            "_data-store_documents-datatilsynet_2019-07.json-2019/1788-2"
 	]
     },
     {
 	"sioa" : [54818],
 	"npl": [
-            "_data-store_documents-dir-bygg_?.json-2019/6087-1"
+            "_data-store_documents-dir-byggkvalitet_2019-08.json-2019/6087-1"
 	]
     },
     {
 	"sioa" : [54868],
 	"npl": [
-            "_data-store_documents-dep-kunnskap_?.json-2019/3142-6"
+            "_data-store_documents-dep-kunnskap_2019-08.json-2019/3142-6"
 	]
     }
 ]
