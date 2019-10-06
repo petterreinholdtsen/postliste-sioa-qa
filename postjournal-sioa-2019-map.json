@@ -121,5 +121,11 @@
 	"npl": [
             "_data-store_documents-dep-kunnskap_2019-08.json-2019/3142-6"
 	]
+    },
+    {
+	"sioa" : [54925],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2019-09.json-2019/3374-3"
+	]
     }
 ]
