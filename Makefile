@@ -14,7 +14,7 @@ csv: pdftable-code pdfs
 	done
 
 tsv:
-	for y in 2017 2018 2019 ; do \
+	for y in 2019 2020 ; do \
 	  bin/tablecsv2db postjournal-sioa/$$y/*.csv > postjournal-sioa-$$y.tsv ; \
 	done
 
