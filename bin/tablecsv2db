@@ -44,18 +44,29 @@ def main():
             log(header)
             for row in csvdata:
                 log(row)
-                if '' == row[0] and '' == row[2]:
-                    # Continuation data row
+                import re
+                if ( ('' == row[0] and '' == row[2])
+                     or re.match(r'\d+:\d+:\d+', row[0]) ):
+                    log("== continuation data row")
+                    log(dataline)
                     dataline['Tittel'] += row[1]
+                    dataline['Endret dato'] += row[0]
                     fieldseen['Tittel'] = 1
-                    log("title continuation")
+                    fieldseen['Endret dato'] = 1
+                    log(dataline)
                     continue
                 elif '' == row[2]:
                     # Contuation header row
                     header[0] += row[0]
                     log("header continuation")
                     continue
+                elif ('SiOs postliste' in row[2]
+                      or 'Endret dato' in row[0]):
+                    # Handle several pages, skip new header
+                    log("new page")
+                    continue
                 else:
+                    log("** data line")
                     dataline = { 'List Title' : title }
                     fieldseen['List Title'] = 1
                     for i in range(0, len(row)):
@@ -74,7 +85,7 @@ def main():
                                 header[i] = 'Saksbehandler'
                             fieldseen[header[i]] = 1
                             dataline[header[i]] = row[i]
-#                print(dataline)
+                log(dataline)
                 if 'Doc #' not in dataline:
                     sys.stderr.write("error:" + str(dataline) + "\n")
                 else:
