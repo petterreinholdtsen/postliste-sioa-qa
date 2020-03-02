@@ -33,7 +33,7 @@ def find_journal_pdfs(baseurl, frontpage):
 
 def main():
     pdfurls = find_journal_pdfs(baseurl, frontpage)
-    years = [2016, 2017, 2018, 2019]
+    years = (2019, 2020)
     for pdfurl in pdfurls:
 #        print(pdfurl, urltitle[pdfurl])
         filename = urltitle[pdfurl]
