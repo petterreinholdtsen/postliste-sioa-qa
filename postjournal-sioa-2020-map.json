@@ -1,0 +1,32 @@
+[
+    {
+	"sioa" : [55649],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2020-01.json-2019/6286-2"
+	]
+    },
+    {
+	"sioa" : [55832],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2020-02.json-2020/704-1"
+	]
+    },
+    {
+	"sioa" : [55898],
+	"npl": [
+	    "_data-store_documents-0301-oslo-kommune_2020-02.json-2017/18294-94"
+	]
+    },
+    {
+	"sioa" : [55653],
+	"npl": [
+	    "_data-store_documents-0301-oslo-kommune_2019-12.json-2017/18294-70"
+	]
+    },
+    {
+	"sioa" : [55921],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2020-02.json-2020/1090-1"
+	]
+    }
+]
