@@ -119,6 +119,12 @@
 	]
     },
     {
+	"sioa": [53141],
+	"npl": [
+	    "_data-store_documents-0301-oslo-kommune_2018-11.json-2017/16449-31"
+	]
+    },
+    {
 	"sioa": [53156],
 	"npl": [
 	    "_data-store_documents-dep-kunnskap_2018-11.json-2018/5495-1"
@@ -128,6 +134,12 @@
 	"sioa": [53227],
 	"npl": [
 	    "_data-store_documents-datatilsynet_2018-11.json-2018/3443-2"
+	]
+    },
+    {
+	"sioa": [53325],
+	"npl": [
+	    "_data-store_documents-0301-oslo-kommune_2018-11.json-2014/9337-153"
 	]
     },
     {
