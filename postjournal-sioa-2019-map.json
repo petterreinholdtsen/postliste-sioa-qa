@@ -81,7 +81,7 @@
     {
 	"sioa" : [54446],
 	"npl": [
-            "_data-store_documents-dep-kunnskap_?.json-2019/1810-3"
+            "_data-store_documents-dep-kunnskap_2019-06.json-2019/1810-3"
 	]
     },
     {
@@ -93,7 +93,7 @@
     {
 	"sioa" : [54627],
 	"npl": [
-            "_data-store_documents-dep-kunnskap_?.json-2019/3208-1"
+            "_data-store_documents-dep-kunnskap_2019-06.json-2019/3208-1"
 	]
     },
     {
@@ -127,6 +127,54 @@
 	"sioa" : [54925],
 	"npl": [
 	    "_data-store_documents-dep-kunnskap_2019-09.json-2019/3374-3"
+	]
+    },
+    {
+	"sioa" : [55099],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2019-10.json-2019/3424-2"
+	]
+    },
+    {
+	"sioa" : [55155],
+	"npl": [
+	    "_data-store_documents-0301-oslo-kommune_2019-10.json-2018/14974-20"
+	]
+    },
+    {
+	"sioa" : [55357],
+	"npl": [
+	    "_data-store_documents-dep-kunnskap_2019-11.json-2019/5300-2"
+	]
+    },
+    {
+	"sioa" : [55380],
+	"npl": [
+	     "_data-store_documents-dep-kunnskap_2019-11.json-2019/5531-1"
+	]
+    },
+    {
+	"sioa" : [55401],
+	"npl": [
+	     "_data-store_documents-dep-kunnskap_2019-11.json-2019/5180-3"
+	]
+    },
+    {
+	"sioa" : [55461],
+	"npl": [
+	     "_data-store_documents-dep-kunnskap_2019-12.json-2019/3142-27"
+	]
+    },
+    {
+	"sioa" : [55465],
+	"npl": [
+	     "_data-store_documents-dep-kunnskap_2019-12.json-2018/6416-8"
+	]
+    },
+    {
+	"sioa" : [55592],
+	"npl": [
+	     "_data-store_documents-dep-kunnskap_2020-01.json-2019/6215-1"
 	]
     }
 ]
