@@ -20,26 +20,34 @@ urltitle = {}
 def find_journal_pdfs(baseurl, frontpage):
     html = fetch_url_harder(frontpage)
     root = lxml.html.fromstring(html)
-    urls = root.cssselect("a.readmore")
     urllist = []
-    for ahref in urls:
-        linktext = ahref.text_content()
-#	print linktext
-        if -1 != linktext.find('uke') and -1 == linktext.find('ingen dokumenter'):
-            href = ahref.attrib['href']
-            urltitle[href] = ahref.text
-            urllist.append(href)
+    for journals in root.cssselect("h3"):
+        t = journals.text_content()
+        if -1 == t.find("Postliste"):
+            continue
+        year = int(t.replace('Postlister ', ''))
+#        print("J", journals, t)
+        urls = journals.getparent().cssselect("a.readmore")
+        for ahref in urls:
+            linktext = ahref.text_content()
+    #	print linktext
+            if -1 != linktext.find('Uke') and -1 == linktext.find('ingen dokumenter'):
+                href = ahref.attrib['href']
+                urltitle[href] = "%s/%s" % (year, ahref.text)
+                urllist.append(href)
+#    print(urllist)
+#    exit(0)
     return urllist
 
 def main():
     pdfurls = find_journal_pdfs(baseurl, frontpage)
-    years = (2019, 2020)
+    years = (2021)
     for pdfurl in pdfurls:
 #        print(pdfurl, urltitle[pdfurl])
         filename = urltitle[pdfurl]
-        for year in years:
-            if -1 != filename.find(str(year)):
-                filename = os.path.join(str(year), filename)
+#        for year in years:
+#            if -1 != filename.find(str(year)):
+#                filename = os.path.join(str(year), filename)
         if not os.path.exists(filename):
             subprocess.call(['wget', '-O', filename, pdfurl])
 
